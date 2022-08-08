@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Three circles</title>
+
+      <style>
+
+      body{text-align:center;}
+      svg{  margin: 10px;}
+
+        @keyframes d3{
+          from{
+            stroke-dasharray: 0, 150;
+            stroke-dashoffset: -90;
+          }
+          to{
+            stroke-dasharray: 150, 0;
+            stroke-dashoffset: -90;
+          }
+        }
+        .c3:hover circle{
+          animation: d3 1s forwards;
+        }
+        @keyframes d1{
+          from{
+            stroke-dasharray: 1, 5;
+          }
+          to{
+            stroke-dasharray: 5, 0;
+          }
+        }
+        .c1:hover circle{
+          animation: d1 1s forwards;
+        }
+
+         @keyframes d2{
+          from{
+            stroke-dasharray: 0, 500;
+            stroke-dashoffset: 0;
+          }
+          to{
+            stroke-dasharray: 100, 0;
+            stroke-dashoffset: -100;
+          }
+        }
+        .c2:hover circle{
+          animation: d2 1s forwards;
+        }
+
+
+
+      </style>
+
+</head>
+<body>
+
+
+  <svg class="c1" xmlns="http://www.w3.org/2000/svg" width="144.543" height="144.543" viewBox="0 0 38.244 38.244">
+    <circle cx="55.098" cy="143.868" r="18.989" opacity=".98" fill="none" stroke="#000" stroke-width=".3" stroke-linecap="round" stroke-linejoin="round" transform="translate(-35.976 -124.746)"/>
+  </svg>
+  
+  <svg class="c2" xmlns="http://www.w3.org/2000/svg" width="144.543" height="144.543" viewBox="0 0 38.244 38.244">
+    <circle cx="55.098" cy="143.868" r="18.989" opacity=".98" fill="none" stroke="#000" stroke-width=".3" stroke-linecap="round" stroke-linejoin="round" transform="translate(-35.976 -124.746)"/>
+  </svg>
+  
+  
+  <svg class="c3" xmlns="http://www.w3.org/2000/svg" width="144.543" height="144.543" viewBox="0 0 38.244 38.244">
+    <circle cx="55.098" cy="143.868" r="18.989" opacity=".98" fill="none" stroke="#000" stroke-width=".3" stroke-linecap="round" stroke-linejoin="round" transform="translate(-35.976 -124.746)"/>
+  </svg>
+
+  
+</body>
+</html>
